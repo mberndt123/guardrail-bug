@@ -1,0 +1,23 @@
+openapi: 3.0.0
+paths:
+  /xxx:
+    get:
+      operationId: xxx
+      responses:
+        '200':
+          description: ""
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Xxx'
+components:
+  schemas:
+    Xxx:
+      type: object
+      additionalProperties: false
+      properties:
+        id:
+          type: integer
+          format: int64
+security:
+  - Bearer: []
